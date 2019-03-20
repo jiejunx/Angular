@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-xs-12">
+      <h1>This is a button</h1>
+        <button class="btn btn-primary" (click)="onCreatButton()">
+          Display Details
+        </button>
+      
+        <p *ngIf="secret">this is what I'm doing in query method:
+          1) append current experience to known  experiences so far: each row is tuple (S,S',a,r)
+        </p>
+
+        <div *ngFor="let click of clicks; let i = index "><p *ngIf="i<5"> This is the {{click}} click {{ secret }}! </p></div>
+
+        <div *ngFor="let click of clicks; let i = index"><p *ngIf="i>=5" [ngStyle]="{'background-color': 'blue', 'color':'white'}"> This is the {{click}} click! </p></div>
+
+        <!-- <ng-template #markBlue [ngStyle]="{'background-color': 'blue'}">This is the {{click}} click!</ng-template> -->
+
+
+      
+    </div>
+  </div>
+</div>
